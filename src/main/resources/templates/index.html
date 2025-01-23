@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Enter notes</title>
+    </head>
+    <body>
+
+        <div class="main-block">
+            <div class="container-block">
+                <form action="/api/user/savebase" method="post" class="notes-form-block">
+
+                    <div class="notes-place firstname-notes">
+                        <label for="firstname" class="notes-label firstname-label">Firstname</label>
+                        <input type="text" name="firstname" id="firstname" class="notes-input firstname-input" placeholder="Enter your firstname ..." required>
+                    </div>
+
+                    <div class="notes-place lastname-notes">
+                        <label for="lastname" class="notes-label lastname-label">Lastname</label>
+                        <input type="text" name="lastname" id="lastname" class="notes-input lastname-input" placeholder="Enter your lastname ..." required>
+                    </div>
+
+                    <div class="input-date-notes">
+                        <div class="input-day">
+                            <input type="text" name="day" class="input-day" placeholder="day">
+                        </div>
+
+                        <div class="input-month">
+                            <input type="text" name="month" class="input-month" placeholder="month">
+                        </div>
+
+                        <div class="input-year">
+                            <input type="text" name="year" class="input-year" placeholder="year">
+                        </div>
+                    </div>
+
+                    <div class="choose-gender">
+                        <label for="gender">
+                            Gender
+                        </label>
+                        <select name="gender" id="gender" class="choose-your-gender">
+                            <option value="OTHER">Other</option>
+                            <option value="MALE">Male</option>
+                            <option value="FEMALE">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="block-button">
+                        <button class="click-button" type="submit">Send notes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

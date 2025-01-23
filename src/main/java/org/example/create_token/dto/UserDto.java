@@ -18,6 +18,5 @@ public class UserDto {
     private String month;
     private int year;
 
-    @Enumerated(EnumType.STRING)
     private Gender gender;
 }

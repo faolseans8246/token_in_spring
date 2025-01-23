@@ -31,7 +31,15 @@ spring:
       ddl-auto: update
     show-sql: true
 
-#    Security
+#  thmeleaf bila ishlash qismi
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  web:
+    resources:
+      add-mappings: true
+
+  #    Security
   security:
     user:
       name: login
