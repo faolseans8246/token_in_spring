@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: create_token
+
+  profiles:
+    active: dev
