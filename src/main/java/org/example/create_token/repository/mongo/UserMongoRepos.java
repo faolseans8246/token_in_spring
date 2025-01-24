@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository("mongoUserRepo")
 public interface UserMongoRepos extends MongoRepository<UserMongo, String> {
-
     // craete queries
 }
