@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container-block {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.notes-form-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-place {
+    margin-bottom: 15px;
+}
+
+.notes-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.notes-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-date-notes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-date-notes input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.choose-gender {
+    margin-bottom: 15px;
+}
+
+.choose-your-gender {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.block-button {
+    text-align: center;
+}
+
+.click-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.click-button:hover {
+    background-color: #0056b3;
+}
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .container-block {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .input-date-notes {
+        flex-direction: column;
+    }
+
+    .input-date-notes input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile Styles (480px and below) */
+@media screen and (max-width: 480px) {
+    .main-block {
+        padding: 10px;
+    }
+
+    .container-block {
+        padding: 10px;
+    }
+
+    .notes-label {
+        font-size: 14px;
+    }
+
+    .notes-input,
+    .choose-your-gender,
+    .input-date-notes input,
+    .click-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
